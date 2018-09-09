@@ -17,4 +17,6 @@ use Illuminate\Http\Request;
 //     return $request->user();
 // });
 
-Route::resource('/user', 'Controller\UserController');
+Route::group(['middleware' => 'cors'], function(){
+    Route::resource('/user', 'Controller\UserController');
+});
