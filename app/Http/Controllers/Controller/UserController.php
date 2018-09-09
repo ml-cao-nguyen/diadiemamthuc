@@ -16,7 +16,7 @@ class UserController extends Controller
     public function index()
     {
         $users = User::get();
-        dd($users);
+        return response()->json($users);
     }
 
     /**
