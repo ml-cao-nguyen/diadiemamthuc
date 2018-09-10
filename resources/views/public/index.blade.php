@@ -64,7 +64,7 @@
   <div class="main_bg">
     <div class="index-main-top">
       <!-- start main_content -->
-      <div class="grid_info" style = "padding-left:50%;">
+      <div class="grid_info" align="center">
         <h3 style="font-size:30px;padding-top:20px">Bài viết mới</h3>
       </div>
 
@@ -79,7 +79,7 @@
                     <a href="">
                       <span class="next"></span>
                     </a>
-                    <img src="files/images/image.jpg">
+                    <img src="{{ asset('template/public/images/slider1.jpg') }}">
                   </div>
                 </li>
                 <li class="top">
@@ -94,7 +94,7 @@
                       <span style="font-size: 14px;font-weight: bold;color: black;">Thời gian:</span>{{ $post->time_create }}
                     </p>
                     <p>
-                      <span style="font-size: 14px;font-weight: bold;color: black;">Địa điểm:</span>{{ $post->locate }}
+                      <span style="font-size: 14px;font-weight: bold;color: black;">Địa điểm:</span>{{ $post->location }}
                     </p><br/>
                     <p style="text-align:justify">{{ $post->preview }}</p>
                   </div>
@@ -108,59 +108,50 @@
       </div>
     </div>
 
-    <!-- <div class="index-main-bottom">
-      <div class="grid_info" style = "padding-left:46%;">
+    <div class="index-main-bottom">
+      <div class="grid_info" align="center">
         <h3 style="font-size:30px;padding-top:20px">Theo danh mục</h3>
       </div>
       
       @foreach($postByCategories as $category)
-        <div class="content" style="width:100%">
-          <div class="content_right">
-            <div class="grid_info" style = "padding-left:0%;">
-              <a href="">
-                <h3 style="font-size:20px;color:red;padding-top:10px">{{ $category->name_cat }}</h3>
-              </a>
-            </div>
-
-            @foreach($category->posts as $post)
-            <div class="grids">
-              <ul class="list1">
-                <li>
-                  <div class="grid_img">
-                    <a href="">
-                      <span class="next"></span>
-                    </a>
-                      <img src="files/images/image.jpg">
-                  </div>
-                </li>
-                <li class="left">
-                  <div class="grid_info">
-                    <a href="">
-                      <h2 style="font-size:20px;color:red;margin-bottom: 10px;">{{ $post->title }}</h2>
-                    </a>
-                    <p>
-                      <span style="font-size: 14px;font-weight: bold;color: black;">Người đăng:</span>
-                      Full name
-                    </p>
-                    <p> 
-                      <span style="font-size: 14px;font-weight: bold;color: black;">Thời gian:</span>{{ $post->time_create }}
-                    </p>
-                    <p>
-                      <span style="font-size: 14px;font-weight: bold;color: black;">Địa điểm:</span>{{ $post->locate }}
-                    </p><br/>
-                    <p style="text-align:justify">{{ $post->preview }}</p>
-                  </div>
-                </li>
-              </ul>
-            </div>
-            @endforeach
-
-            <div class="clear"></div>
+        <div class="content_right">
+          <div class="grid_info" style = "padding-left:0%;">
+            <a href="">
+              <h3 style="font-size:20px;color:red;padding-top:10px">{{ $category->name_cat }}</h3>
+            </a>
           </div>
+
+          @foreach($category->posts as $post)
+          <div class="grids">
+            <ul class="list1">
+              <li>
+                <div class="grid_img">
+                  <a href="">
+                    <span class="next"></span>
+                  </a>
+                  <img src="{{ asset('template/public/images/slider1.jpg') }}">
+                </div>
+              </li>
+              <li class="left">
+                <div class="grid_info">
+                  <a href="">
+                    <h2 style="font-size:20px;color:red;margin-bottom: 10px;">{{ $post->title }}</h2>
+                  </a>
+                  <p class="post-location">
+                    <span style="font-size: 14px;font-weight: bold;color: black;">Địa điểm:</span>{{ $post->location }}
+                  </p>
+                  <p class="post-preview-bottom">{{ $post->preview }}</p>
+                </div>
+              </li>
+            </ul>
+          </div>
+          @endforeach
+
+          <div class="clear"></div>
         </div>
       @endforeach
 
       <div class="clear"></div>	
-    </div> -->
+    </div>
 </div>
 @endsection

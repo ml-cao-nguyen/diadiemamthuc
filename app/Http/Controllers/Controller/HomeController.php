@@ -18,7 +18,7 @@ class HomeController extends Controller
     {
         $newPosts = Post::orderBy('time_create', 'desc')->limit(3)->get();
         $postByCategories = Category::get()->each(function($category){
-            $category["posts"] = Post::where('id_cat', $category->id_cat)->limit(4)->get();
+            $category["posts"] = Post::where('id_cat', $category->id_cat)->limit(2)->get();
         });
         return view('public.index', compact('newPosts', 'postByCategories'));
     }
