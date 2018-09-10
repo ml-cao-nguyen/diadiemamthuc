@@ -20,7 +20,9 @@
 						<i class="icon2"></i>
 					</a>
 					<ul>
-						<li><a href="">Danh muc 1</a></li>
+						@foreach(getCategories() as $category)
+							<li><a href="">{{ $category->name_cat }}</a></li>
+						@endforeach
 					</ul>
 				</li>
 				<li>

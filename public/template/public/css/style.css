@@ -190,8 +190,7 @@ body {
 }
 .content_left{
 	float:left;
-	width: 31%;
-	height: 600px;
+	width: 24%;
 	margin:20px 0px 20px 20px;
 }
 .content_right {
@@ -205,6 +204,7 @@ body {
 }
 .list {
 	background: #ffffff;
+	border-radius: 5px;
 }
 .list li{
 	display: block;	
@@ -213,7 +213,6 @@ body {
 	border-top: 1px solid #f53300;
 	display:block;
 	position: relative;
-	height: 380px;
 }
 .list li.top:before{
 	content: url('../images/top.png');

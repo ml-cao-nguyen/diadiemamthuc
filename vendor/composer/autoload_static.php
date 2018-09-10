@@ -17,6 +17,7 @@ class ComposerStaticInit78235fd097e52c7b97d2f002bc903262
         '6124b4c8570aa390c21fafd04a26c69f' => __DIR__ . '/..' . '/myclabs/deep-copy/src/DeepCopy/deep_copy.php',
         '801c31d8ed748cfa537fa45402288c95' => __DIR__ . '/..' . '/psy/psysh/src/functions.php',
         '0d8253363903f0ac7b0978dcde4e28a0' => __DIR__ . '/..' . '/beyondcode/laravel-dump-server/helpers.php',
+        '08ee81e4c49120d85f2d008418063b3c' => __DIR__ . '/../..' . '/app/Helpers/common.php',
     );
 
     public static $prefixLengthsPsr4 = array (
@@ -336,6 +337,7 @@ class ComposerStaticInit78235fd097e52c7b97d2f002bc903262
         'App\\Http\\Controllers\\Auth\\VerificationController' => __DIR__ . '/../..' . '/app/Http/Controllers/Auth/VerificationController.php',
         'App\\Http\\Controllers\\Controller' => __DIR__ . '/../..' . '/app/Http/Controllers/Controller.php',
         'App\\Http\\Controllers\\Controller\\CategoryController' => __DIR__ . '/../..' . '/app/Http/Controllers/Controller/CategoryController.php',
+        'App\\Http\\Controllers\\Controller\\HomeController' => __DIR__ . '/../..' . '/app/Http/Controllers/Controller/HomeController.php',
         'App\\Http\\Controllers\\Controller\\PostController' => __DIR__ . '/../..' . '/app/Http/Controllers/Controller/PostController.php',
         'App\\Http\\Controllers\\Controller\\RoleController' => __DIR__ . '/../..' . '/app/Http/Controllers/Controller/RoleController.php',
         'App\\Http\\Controllers\\Controller\\UserController' => __DIR__ . '/../..' . '/app/Http/Controllers/Controller/UserController.php',
