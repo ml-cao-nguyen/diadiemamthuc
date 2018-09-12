@@ -12,6 +12,7 @@ class Role extends Model
      * @var string $tabel table name
      */
     protected $table = 'role';
+    protected $primaryKey = 'id_role';
 
     /**
      * Constant admin team

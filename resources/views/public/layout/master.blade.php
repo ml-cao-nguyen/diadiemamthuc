@@ -15,8 +15,8 @@
 <body class="hold-transition skin-blue sidebar-mini">
 <!-- start sb-search -->
 <div id="sb-search" class="sb-search" style="margin:10px 0px;">
-	<form method="post" action="">
-		<input class="sb-search-input" placeholder="Nhập tìm kiếm..." type="text" value="" name="search" id="search">
+	<form method="get" action="{{ route('search') }}">
+		<input class="sb-search-input" placeholder="Nhập tìm kiếm..." type="text" value="" name="keyword" id="search">
 		<input class="sb-search-submit" type="button" value="">
 		<span class="sb-icon-search"></span>
 	</form>

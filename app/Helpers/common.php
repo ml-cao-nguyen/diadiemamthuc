@@ -11,6 +11,8 @@ if (!function_exists('getCategories')) {
      */
     function getCategories()
     {
-        return Category::all();
+        return Category::all()->each(function($category){
+            $category['num_posts'] = Post::where('id_cat', $category->id_cat)->count();
+        });
     }
 }

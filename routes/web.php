@@ -16,4 +16,6 @@
 // });
 
 Route::resource('/', 'Controller\HomeController');
+Route::get('/search', 'Controller\HomeController@search')->name('search');
 Route::resource('/user', 'Controller\UserController');
+Route::resource('/post', 'Controller\PostController');

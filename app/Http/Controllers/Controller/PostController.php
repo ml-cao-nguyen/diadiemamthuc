@@ -4,6 +4,7 @@ namespace App\Http\Controllers\Controller;
 
 use Illuminate\Http\Request;
 use App\Http\Controllers\Controller;
+use App\Model\Post;
 
 class PostController extends Controller
 {
@@ -41,12 +42,14 @@ class PostController extends Controller
     /**
      * Display the specified resource.
      *
-     * @param  int  $id
+     * @param  Post $post
      * @return \Illuminate\Http\Response
      */
-    public function show($id)
+    public function show(Post $post)
     {
-        //
+        $category = $post->category;
+        $user = $post->user;
+        return view('public.detail', compact('post', 'category', 'user'));
     }
 
     /**

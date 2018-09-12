@@ -38,10 +38,10 @@
     <h3>Danh mục</h3>
     <ul class="s_nav">
 
-      @foreach($postByCategories as $category)
+      @foreach(getCategories() as $category)
         <li><a href="">
               <span>{{ $category->name_cat }}</span>
-              <label>{{ $category->posts->count() }}</label>
+              <label>{{ $category->num_posts }}</label>
             <div class="clear"></div>
           </a>
         </li>
