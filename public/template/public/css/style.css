@@ -107,7 +107,7 @@ body {
 }
 /* Open state */
 .sb-search.sb-search-open,.no-js .sb-search {
-	width: 100%;
+	width: 80%;
 }
 .sb-search.sb-search-open .sb-icon-search,.no-js .sb-search .sb-icon-search {
 	background: #f53300 url('../images/search.png') no-repeat 14px 14px;
@@ -1830,4 +1830,16 @@ ul.comment-list .desc p{
 
 .index-main-bottom .grid_img img{
 	border-radius: 4px 0px 0px 4px;
+}
+
+.header {
+	margin-right: 100px;
+}
+
+.flexy-menu li{
+	background-color: #fff;
+}
+
+.flexy-menu a {
+	color: #000000;
 }

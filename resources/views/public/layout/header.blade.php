@@ -1,6 +1,6 @@
 <!-- start header -->
 <div class="header">
-	<div class="wrap">
+	<div class="header-wrap">
 		<div class="logo">
 		<br /><br /><br /><br /><br />
 		</div>
@@ -9,7 +9,7 @@
 			<!-- start nav-->
 			<ul class="flexy-menu thick orange">
 				<li>
-					<a  href="publicIndex.php">
+					<a  href="">
 						<span class="">Trang chủ</span>	
 						<i class="icon3"></i>
 					</a>

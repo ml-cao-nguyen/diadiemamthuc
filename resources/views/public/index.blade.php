@@ -138,7 +138,7 @@
                     <h2 style="font-size:20px;color:red;margin-bottom: 10px;">{{ $post->title }}</h2>
                   </a>
                   <p class="post-location">
-                    <span style="font-size: 14px;font-weight: bold;color: black;">Địa điểm:</span>{{ $post->location }}
+                    <span style="font-size: 14px;font-weight: bold;color: black;">Địa điểm: </span>{{ $post->location }}
                   </p>
                   <p class="post-preview-bottom">{{ $post->preview }}</p>
                 </div>
