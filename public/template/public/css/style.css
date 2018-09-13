@@ -894,7 +894,7 @@ h5.style{
 }
 .blog_left{
 	float: left;
-	width: 76%;
+	width: 70%;
 	margin-right: 3%;
 }
 .blog_left  h3 a{
@@ -1867,4 +1867,20 @@ ul.comment-list .desc p{
 	margin: 10px;
 	display: block;
 	text-align: right;
+}
+
+.detail-wrap {
+	width: 100%;
+	margin-left: 7%;
+}
+
+.detail-wrap .sidebar{
+	border-radius: 4px 0 0 4px;
+}
+
+.detail-wrap .blog_left img {
+	border-radius: 4px;
+	margin: 10px 0;
+	width:600px;
+	height:300px;
 }
