@@ -49,7 +49,10 @@ class PostController extends Controller
     {
         $category = $post->category;
         $user = $post->user;
-        return view('public.detail', compact('post', 'category', 'user'));
+        $posts = Post::where('id_cat', $category->id_cat)
+                    ->limit(3)
+                    ->get();
+        return view('public.detail', compact('post', 'posts', 'category', 'user'));
     }
 
     /**
