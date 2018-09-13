@@ -19,3 +19,6 @@ Route::resource('/', 'Controller\HomeController');
 Route::get('/search', 'Controller\HomeController@search')->name('search');
 Route::resource('/user', 'Controller\UserController');
 Route::resource('/post', 'Controller\PostController');
+Route::resource('/category', 'Controller\CategoryController');
+
+Route::get('login', 'LoginController@index');

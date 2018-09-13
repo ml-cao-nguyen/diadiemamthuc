@@ -4,6 +4,7 @@ namespace App\Http\Controllers\Controller;
 
 use Illuminate\Http\Request;
 use App\Http\Controllers\Controller;
+use App\Model\Category;
 
 class CategoryController extends Controller
 {
@@ -41,12 +42,13 @@ class CategoryController extends Controller
     /**
      * Display the specified resource.
      *
-     * @param  int  $id
+     * @param  Category $category
      * @return \Illuminate\Http\Response
      */
-    public function show($id)
+    public function show(Category $category)
     {
-        //
+        $posts = $category->posts;
+        return view('public.category', compact('category', 'posts'));
     }
 
     /**
