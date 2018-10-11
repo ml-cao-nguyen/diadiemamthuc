@@ -22,3 +22,6 @@ Route::resource('/post', 'Controller\PostController');
 Route::resource('/category', 'Controller\CategoryController');
 
 Route::get('login', 'LoginController@index');
+Route::get('logout', 'LoginController@logout')->name('logout');
+Route::post('login', 'LoginController@login')->name('login');
+Route::post('register', 'LoginController@register')->name('register');

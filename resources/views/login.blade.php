@@ -31,23 +31,25 @@
 	
 	  <div id="login-page">
 	  	<div class="container">
-		      <form class="form-login" action="login.php" method="post" id="form1">
+		      <form class="form-login" action="{{ route('login') }}" method="post" id="form1">
+			  	{!! csrf_field() !!}
 		        <h2 class="form-login-heading">Đăng nhập</h2>
 		        <div class="login-wrap">
-							<input type="text" class="form-control" name="username" id="username" placeholder="Username" autofocus>
-							<br>
-							<input type="password" class="form-control" name="password" id="password" placeholder="Password">
-							<br>
-							<input type="submit" class="btn btn-theme btn-block" name="login" value="Đăng nhập">
-							<br>	
-							<a data-toggle="modal" href="#myModal" style="margin-left: 42%">Đăng kí</a>
-							<br>
+					<input type="text" class="form-control" name="username" id="username" placeholder="Username" autofocus>
+					<br>
+					<input type="password" class="form-control" name="password" id="password" placeholder="Password">
+					<br>
+					<input type="submit" class="btn btn-theme btn-block" name="login" value="Đăng nhập">
+					<br>	
+					<a data-toggle="modal" href="#myModal" style="margin-left: 42%">Đăng kí</a>
+					<br>
 		        </div>	
 		      </form>	 
 		      <!-- Modal -->
 	          <div role="dialog" tabindex="-1" id="myModal" class="modal fade" >
 	              <div class="modal-dialog">
-	              	<form method = "post" action="signin.php" id="form2">
+	              	<form method = "post" action="{{ route('register') }}" id="form2">
+					  {!! csrf_field() !!}
 	                  <div class="modal-content">
 	                      <div class="modal-header">
 	                          <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
@@ -56,8 +58,14 @@
 	                      <div class="modal-body">
 	                          <input type="text" name="username" placeholder="Username" autocomplete="off" class="form-control placeholder-no-fix">
 	                      </div>
+						  <div class="modal-body">
+	                          <input type="text" name="fullname" placeholder="Fullname" autocomplete="off" class="form-control placeholder-no-fix">
+	                      </div>
 	                      <div class="modal-body">
 	                          <input type="email" name="email" placeholder="Email" autocomplete="off" class="form-control placeholder-no-fix">
+	                      </div>
+						  <div class="modal-body">
+	                          <input type="text" name="phone" placeholder="Phone" autocomplete="off" class="form-control placeholder-no-fix">
 	                      </div>
 	                      <div class="modal-body">
 	                          <input type="password"  name="password" placeholder="Password" autocomplete="off" class="form-control placeholder-no-fix">

@@ -13,6 +13,7 @@ class Post extends Model
      */
     protected $table = 'post';
     protected $primaryKey = 'id_post';
+    public $timestamps = false;
 
     /**
      * The attributes that are mass assignable.
